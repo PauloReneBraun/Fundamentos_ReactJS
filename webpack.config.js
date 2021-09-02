@@ -10,6 +10,10 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     module: {
-        rules: []
+        rules: [
+            {
+                test: /$/,
+            }
+        ],
     }
 };
