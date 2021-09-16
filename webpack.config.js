@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: path.resolve(__dirname, 'index.jsx'),
@@ -9,6 +10,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']
     },
+    plugins: {},
     module: {
         rules: [
             {
