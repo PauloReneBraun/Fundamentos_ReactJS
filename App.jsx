@@ -1,3 +1,6 @@
 export function App() {
-    return <h1>Hello World</h1>
+    throw new Error(' Puts grila Nilce')
+
+
+    return <h1>Hello World!</h1>
 }
