@@ -12,7 +12,7 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     devServer: {
-
+        contentBase: path.resolve(__dirname, '')
     },
     plugins: [
         new HtmlWebpackPlugin({
