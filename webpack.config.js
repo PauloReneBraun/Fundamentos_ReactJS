@@ -4,6 +4,7 @@ const { Template } = require('webpack');
 
 module.exports = {
     mode: 'development',
+    devtool: '' ,
     entry: path.resolve(__dirname, 'index.jsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
