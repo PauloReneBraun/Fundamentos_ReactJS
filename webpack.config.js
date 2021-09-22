@@ -4,7 +4,7 @@ const { Template } = require('webpack');
 
 module.exports = {
     mode: 'development',
-    devtool: '' ,
+    devtool: 'eval-source-map' ,
     entry: path.resolve(__dirname, 'index.jsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
