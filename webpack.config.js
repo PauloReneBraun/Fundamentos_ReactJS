@@ -2,6 +2,8 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { Template } = require('webpack');
 
+const isDevelopment = process.env.NODE_ENV
+
 module.exports = {
     mode: 'development',
     devtool: 'eval-source-map' ,
