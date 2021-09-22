@@ -6,7 +6,7 @@ const isDevelopment = process.env.NODE_ENV !== 'poduction';
 
 module.exports = {
     mode: isDevelopment ? 'development' : 'poduction' ,
-    devtool: 'eval-source-map' ,
+    devtool: isDevelopment ?  'eval-source-map' : 'source-map',
     entry: path.resolve(__dirname, 'index.jsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
