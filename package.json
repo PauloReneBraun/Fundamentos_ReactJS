@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    
+    "dev"
   },
   "dependencies": {
     "@babel/cli": "^7.14.8",
