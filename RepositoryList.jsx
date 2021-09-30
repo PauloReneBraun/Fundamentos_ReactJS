@@ -9,7 +9,7 @@ export function RepositoryList() {
                 <p>Forms in ReactJS</p>
 
                 <a href="">
-                    Acessar
+                    Acessar repositório
                 </a>
               </li>  
             </ul>
