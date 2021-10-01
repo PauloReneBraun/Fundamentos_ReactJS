@@ -7,7 +7,7 @@ export function RepositoryList() {
 
             <ul>
               <li>
-                <strong>unform</strong>
+                <strong>{repositoryName}</strong>
                 <p>Forms in ReactJS</p>
 
                 <a href="">
