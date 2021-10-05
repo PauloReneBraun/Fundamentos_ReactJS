@@ -9,6 +9,9 @@ export function RepositoryList() {
 
             <ul>
               <RepositoryItem/>
+              <RepositoryItem/>
+              <RepositoryItem/>
+              <RepositoryItem/>
             </ul>
         </section>
     );
