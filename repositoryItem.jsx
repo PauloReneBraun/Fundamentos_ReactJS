@@ -8,5 +8,5 @@ export function RepositoryItem() {
             Acessar repositório
         </a>
       </li>  
-    ):
+    );
 }
