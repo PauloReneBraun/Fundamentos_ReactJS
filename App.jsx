@@ -3,7 +3,7 @@ import './styles/global.scss';
 
 export function App() {
     throw new Error(' Puts grila Nilce')
-
-
-    return <RepositoryList />
+    return (
+        <RepositoryList />
+    )
 }
