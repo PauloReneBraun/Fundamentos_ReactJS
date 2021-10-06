@@ -8,7 +8,10 @@ export function RepositoryList() {
             <h1>Lista de repositórios</h1>
 
             <ul>
-              <RepositoryItem/>
+              <RepositoryItem
+                repository={}
+                description="Forms in React"
+              />
               <RepositoryItem/>
               <RepositoryItem/>
               <RepositoryItem/>
