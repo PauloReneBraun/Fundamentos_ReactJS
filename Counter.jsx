@@ -1,5 +1,8 @@
 export function Counter() {
     return (
-        <div></div>
+        <div>
+            <h2>0</h2>
+            <button type="button">Increment</button>
+        </div>
     );
 }
