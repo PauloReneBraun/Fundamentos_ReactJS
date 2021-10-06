@@ -1,4 +1,6 @@
 export function Counter() {
+    let Counter = 0;
+
     function increment() {
         console.log('incrementing')
     }
