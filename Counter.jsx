@@ -1,5 +1,7 @@
+import { useState } from "react";
+
 export function Counter() {
-    let Counter = 0;
+    let Counter = useState(0);
 
     function increment() {
         Counter += 1;
