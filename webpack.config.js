@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmwh/react-refresh-webpack-plugin')
 const { Template } = require('webpack');
 
 const isDevelopment = process.env.NODE_ENV !== 'poduction';
@@ -19,6 +20,7 @@ module.exports = {
         contentBase: path.resolve(__dirname, 'public'),
     },
     plugins: [
+        new ReactRefreshWebpackPlugin(),
         new HtmlWebpackPlugin({
             Template: path.resolve(__dirname, 'public', 'index.html')
         })
