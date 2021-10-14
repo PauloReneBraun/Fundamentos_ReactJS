@@ -1,5 +1,7 @@
 import { RepositoryItem } from "./repositoryItem";
 
+import '../styles/repositories.scss';
+
 const repositoryName ='uniform';
 
 export function RepositoryList() {
