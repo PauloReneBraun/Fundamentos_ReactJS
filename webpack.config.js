@@ -18,6 +18,7 @@ module.exports = {
     },
     devServer: {
         contentBase: path.resolve(__dirname, 'public'),
+        hot: true,
     },
     plugins: [
         isDevelopment && new ReactRefreshWebpackPlugin(),
@@ -30,7 +31,14 @@ module.exports = {
             {
                 test: /\js$/,
                 exclude: /node_modules/,
-                use: 'babel-loader'
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        plugins: [
+                            isDevelopment && require.resolve('react-refresh/babel')
+                        ].filter(Boolean)
+                    }
+                }
             }, 
             {
                 test: /\.scss$/,
