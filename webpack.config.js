@@ -20,11 +20,11 @@ module.exports = {
         contentBase: path.resolve(__dirname, 'public'),
     },
     plugins: [
-        new ReactRefreshWebpackPlugin(),
+        isDevelopment && new ReactRefreshWebpackPlugin(),
         new HtmlWebpackPlugin({
             Template: path.resolve(__dirname, 'public', 'index.html')
         })
-    ],
+    ].filter(Boolean),
     module: {
         rules: [
             {
