@@ -7,7 +7,7 @@ import { useState } from "react";
 const repositoryName ='uniform';
 
 export function RepositoryList() {
-  const [] = useState([]);
+  const [repositories , setRepotories] = useState([]);
 
     return(
         <section className="repository-list">
