@@ -14,9 +14,9 @@ export function RepositoryList() {
                 repository={}
                 description="Forms in React"
               />
-              <RepositoryItem/>
-              <RepositoryItem/>
-              <RepositoryItem/>
+              <RepositoryItem repository={repository} />
+              <RepositoryItem repository={repository} />
+              <RepositoryItem repository={repository} />
             </ul>
         </section>
     );
