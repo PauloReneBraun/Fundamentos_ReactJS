@@ -9,6 +9,8 @@ const repositoryName ='uniform';
 export function RepositoryList() {
   const [repositories , setRepotories] = useState([]);
 
+    useEffect()
+
     return(
         <section className="repository-list">
             <h1>Lista de repositórios</h1>
