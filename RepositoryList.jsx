@@ -9,7 +9,11 @@ const repositoryName ='uniform';
 export function RepositoryList() {
   const [repositories , setRepotories] = useState([]);
 
-    useEffect(() => {}, )
+    useEffect(() => {
+      fetch()
+      .then(Response => Response.json())
+      .then(data => console.log(data))
+    }, [])
 
     return(
         <section className="repository-list">
