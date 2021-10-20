@@ -20,13 +20,9 @@ export function RepositoryList() {
             <h1>Lista de repositórios</h1>
 
             <ul>
-              <RepositoryItem
-                repository={}
-                description="Forms in React"
-              />
-              <RepositoryItem repository={repository} />
-              <RepositoryItem repository={repository} />
-              <RepositoryItem repository={repository} />
+              {repositories.map(repository => {
+                return <repositoryItem key={repository.name} repository={repository} />
+              })}
             </ul>
         </section>
     );
