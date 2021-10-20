@@ -9,7 +9,7 @@ const repositoryName ='uniform';
 export function RepositoryList() {
   const [repositories , setRepotories] = useState([]);
 
-    useEffect()
+    useEffect(() => {}, )
 
     return(
         <section className="repository-list">
