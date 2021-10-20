@@ -12,8 +12,8 @@ export function RepositoryList() {
     useEffect(() => {
       fetch()
       .then(Response => Response.json())
-      .then(data => console.log(data))
-    }, [])
+      .then(data => setRepotories(data))
+    }, []);
 
     return(
         <section className="repository-list">
