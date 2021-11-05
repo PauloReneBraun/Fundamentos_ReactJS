@@ -4,6 +4,12 @@ import { RepositoryItem } from "./repositoryItem";
 import '../styles/repositories.scss';
 import { useState } from "react";
 
+import '../styles/repositories.scss';
+
+interface Repository {
+  
+}
+
 const repositoryName ='uniform';
 
 export function RepositoryList() {
