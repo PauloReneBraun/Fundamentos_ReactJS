@@ -7,7 +7,7 @@ import { useState } from "react";
 import '../styles/repositories.scss';
 
 interface Repository {
-  
+  name: String ;
 }
 
 const repositoryName ='uniform';
