@@ -13,7 +13,7 @@ interface Repository {
 const repositoryName ='uniform';
 
 export function RepositoryList() {
-  const [repositories , setRepotories] = useState([]);
+  const [repositories , setRepotories] = useState<>([]);
 
     useEffect(() => {
       fetch()
