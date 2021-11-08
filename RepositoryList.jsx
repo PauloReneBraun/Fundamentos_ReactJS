@@ -7,13 +7,16 @@ import { useState } from "react";
 import '../styles/repositories.scss';
 
 interface Repository {
-  name: String ;
+  name: String;
+  description: String;
+  html : String;
+
 }
 
 const repositoryName ='uniform';
 
 export function RepositoryList() {
-  const [repositories , setRepotories] = useState<>([]);
+  const [repositories , setRepotories] = useState<Repository>([]);
 
     useEffect(() => {
       fetch()
